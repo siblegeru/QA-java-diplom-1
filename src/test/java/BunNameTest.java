@@ -5,7 +5,6 @@ import praktikum.Bun;
 
 import static org.junit.Assert.*;
 
-//сделать параметризацию тестов
 @RunWith(Parameterized.class)
 public class BunNameTest {
 
@@ -39,10 +38,4 @@ public class BunNameTest {
         assertEquals("Введите корректное значение имени", name, request);
     }
 
-    @Test
-    public void getPriceBun(){
-        bun = new Bun(name, price);
-        float request = bun.getPrice();
-        assertEquals("Введите корректное значение цены", price, request, 0.1);
-    }
 }
