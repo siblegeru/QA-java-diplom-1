@@ -10,7 +10,7 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
 public class BunPriceTest{
-
+    private static final float DELTA = 0.001f;
     private final String name;
     private final float price;
     Bun bun;
@@ -37,7 +37,7 @@ public class BunPriceTest{
     public void getPriceBun(){
         bun = new Bun(name, price);
         float request = bun.getPrice();
-        assertEquals(price, request, 0.0001);
+        assertEquals(price, request, DELTA);
     }
 
 

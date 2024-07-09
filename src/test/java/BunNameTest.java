@@ -27,7 +27,6 @@ public class BunNameTest {
                 {null, 100f},
                 {"black bun", 95f},
                 {"black bun", 100f},
-                {"black bun", 100f},
         };
     }
 
